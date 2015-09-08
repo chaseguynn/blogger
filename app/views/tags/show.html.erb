@@ -1,0 +1,6 @@
+<h1>Articles Tagged with <%= @tag.name %></h1>
+
+<ul>
+    <li><%= @tag.name %></li>
+    <li><%= link_to "Delete", @tag, method: :delete, data: {confirm: "Really delete the tag?"} %></li>
+</ul>
